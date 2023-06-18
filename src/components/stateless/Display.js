@@ -12,7 +12,10 @@ const Display = (props) => {
   // Changing the Ipod Display Theme Color
   const themeDisplay = () => {
     if (theme.themeIndex === 0) {
-      return { background: "linear-gradient(90deg, #e3e4e5,#cacaca)" };
+      return {
+        border: "10px ridge black",
+        background: "linear-gradient(90deg, #e3e4e5,#cacaca)",
+      };
     } else {
       return { backgroundColor: "131313" };
     }
@@ -34,8 +37,7 @@ const Display = (props) => {
           style={{
             height: "100%",
             width: "100%",
-            borderTopLeftRadius: "10%",
-            borderTopRightRadius: "10%",
+
             zIndex: 2,
           }}
         />
